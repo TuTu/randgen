@@ -32,7 +32,7 @@ CONTAINS
     usage = "Usage: " // TRIM(ADJUSTL(arg)) // " -n <num> [-r <min> <max>]"
 
     if (n < LEAST_REQUIRED_NUM_ARG) then
-       write(*,"(A,I1,A)") "Insufficient arguments!"
+       write(*,*) "Insufficient arguments!"
        write(*,*) usage
        call EXIT(1)
     end if
